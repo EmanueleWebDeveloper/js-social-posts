@@ -76,4 +76,17 @@ const posts = [
     }
 ];
 
+let container = document.getElementById(`container`)
 
+for (let i = 0; i < posts.length; i++) {
+    container.innerHTML += '<div class="post">';
+    for (const key in posts[i]) {
+        if (key === 'author') {
+            
+            container.innerHTML += `<div>${key}: ${posts[i][key].name}</div>`;
+        } else {
+            container.innerHTML += `<div>${key}: ${posts[i][key]}</div>`;
+        }
+    }
+    container.innerHTML += '</div>';
+}
