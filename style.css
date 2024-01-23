@@ -123,3 +123,17 @@ h1 {
     color: #0CD977;
     cursor: default;
 }
+
+.like-button--liked:hover {
+    background-color: inherit;
+}
+
+
+.likes__counter {
+    margin-left: 8px;
+}
+
+
+.like-button__label.liked-label {
+    color: blue; 
+}
