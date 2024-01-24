@@ -104,7 +104,7 @@ posts.forEach((element) => {
                     </div>
                     <div class="post-meta__data">
                         <div class="post-meta__author">${element.author.name}</div>
-                        <div class="post-meta__time">${element.created}</div>
+                        <div class="post-meta__time">${formattaData (element.created)}</div>
                     </div>
                 </div>
             </div>
@@ -127,3 +127,12 @@ posts.forEach((element) => {
             </div>
         </div>`;
 });
+
+// Bonus1
+
+function formattaData( created ){
+    
+
+    return created.split( '-' ).reverse().join(` / `)
+
+}
